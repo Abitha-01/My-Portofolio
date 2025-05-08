@@ -14,7 +14,6 @@
     text-decoration: none;
     text-transform: capitalize;
     transition: .2s linear;
-    
 }
 
 html{
@@ -36,7 +35,7 @@ html::-webkit-scrollbar-thumb{
 }
 .header{
     top: 0; right: 0; left: 0;
-    background-color: var(--white);
+    background-color: var(--black);
     display:flex;
     align-items: center;
     justify-content: space-between;
@@ -49,6 +48,7 @@ html::-webkit-scrollbar-thumb{
     display: flex;
     align-items: center;
     font-size: 2rem;
+    color: var(--white);
 }
 
 
@@ -56,7 +56,7 @@ html::-webkit-scrollbar-thumb{
 .header .navbar a{
     font-size: 2rem;
     margin-right: 3rem;
-    color: var(--black);
+    color: var(--white);
 }
 .header .navbar a:hover{
     border-bottom: .1rem solid var(--black);
@@ -71,3 +71,407 @@ html::-webkit-scrollbar-thumb{
 #menu-bar{
     display: none;
 }
+
+.aboutme{
+
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background: url('https://raw.githubusercontent.com/Abitha-01/My-Portofolio/main/background2.png')  center center;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+
+}
+
+.aboutme .aboutcontent{
+    width: 75%;
+    float: right;
+    text-align: center;
+    padding: 4rem;
+    color: var(--white);
+}
+
+.aboutme .aboutcontent h2{
+    font-size: 5rem;
+    font-weight: bolder;
+    margin-bottom: 2rem;
+    line-height: 7rem;
+    color: var(--white);
+    text-shadow: var(--box-shadow);
+}
+.aboutme .aboutcontent p{
+    font-size: 2rem;
+    line-height: 2;
+    margin-bottom: 2rem;
+}
+
+
+.download-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    color: white;
+    background-color: #1f1f1f;
+    border: 1px solid #555;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+  
+  .download-btn i {
+    margin-right: 8px;
+  }
+  
+  .download-btn:hover {
+    background-color: #333;
+    border-color: #888;
+  }
+
+.skills{
+    
+    background-image: url('https://raw.githubusercontent.com/Abitha-01/My-Portofolio/main/skillsbg.png');
+    background-attachment: fixed;
+}
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    background-image: url('https://raw.githubusercontent.com/Abitha-01/My-Portofolio/main/skillsbg.png');
+    background-attachment: fixed;
+    padding: 60px 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .skills-title {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-weight: 600;
+  }
+  
+  .skill-item {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    flex: 0 0 auto;
+  }
+  
+  .skill-circle {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .skill-circle circle {
+    fill: none;
+    stroke-width: 10;
+    stroke-linecap: round;
+    transform: translate(10px, 10px);
+  }
+  
+  .skill-circle .bg {
+    stroke: rgba(255, 255, 255, 0.2);
+  }
+  
+  .skill-circle .progress {
+    stroke: #99aaea;
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    transition: stroke-dashoffset 1s ease-out;
+  }
+  
+  .skill-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  .skill-percent {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .skill-name {
+    font-size: 1rem;
+    margin-top: 5px;
+  }
+  
+  .animated {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  }
+  
+  .animated.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+
+  
+
+.projects{
+  
+    background-image: url('https://raw.githubusercontent.com/Abitha-01/My-Portofolio/main/skillsbg.png');
+    background-attachment: fixed;
+}
+
+.projects .projects-row{
+    margin-bottom: 5rem;
+    display: flex;
+    align-items: center;
+}
+.projects .projects-row .box{
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    background-color: var(--black);
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    gap: 1rem;
+    border-radius: 3rem;
+    margin-right: 3rem;
+}
+.projects .projects-row .img img{
+    width: 200px;
+    height: 200px;
+    border-radius: 60%; /* Makes the shape round */
+    object-fit: cover; /* Ensures the image fits nicely in the circle */
+    display: block; /* Ensures no unwanted gaps */
+    margin: auto; /* Centers the image horizontally if inside a container */
+    border: 2px solid #fff; /* Optional: Adds a border */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+}
+.projects .projects-row .img img:hover{
+    transform: scale(1.1);
+}
+.projects .projects-row .content {
+    margin-bottom: 2rem;
+}
+.projects .projects-row .projects-content h3{
+    font-size: 2rem;
+    color: var(--white);
+}
+.projects .projects-row .projects-content p{
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--white);
+}
+
+
+
+
+
+.projects .protitle h2{
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+.footer{
+     
+    background-image: url('https://raw.githubusercontent.com/Abitha-01/My-Portofolio/main/skillsbg.png');
+    background-attachment: fixed;
+}
+
+.contact-footer {
+    background-color: #000;
+    color: rgb(255, 255, 255);
+    padding: 50px 20px;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .contact-box {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-top: 1px solid #444;
+    padding-top: 30px;
+    gap: 60px;
+  }
+  
+  .contact-form {
+    flex: 1 1 45%;
+  }
+  
+  .contact-form h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #555;
+    color: white;
+    font-size: 16px;
+  }
+  
+  .contact-form button {
+    background: white;
+    color: black;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .contact-form button:hover {
+    background: #ddd;
+  }
+  
+  .contact-info {
+    flex: 1 1 45%;
+    margin-top: 20px;
+  }
+  
+  .contact-info p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .social-icons a {
+    color: white;
+    font-size: 20px;
+    margin-right: 15px;
+    transition: color 0.3s;
+  }
+  
+  .social-icons a:hover {
+    color: #0a66c2; 
+  }
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    html {
+      font-size: 60%;
+    }
+  
+    .header .navbar {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: var(--black);
+      padding: 1rem 2rem;
+      z-index: 998;
+    }
+  
+    .header .navbar a {
+      margin: 1rem 0;
+    }
+  
+    .header .navbar.active {
+      display: flex;
+    }
+  
+    .header .icon i {
+      display: block;
+    }
+  
+    .aboutme {
+      flex-direction: column;
+      text-align: center;
+      padding: 2rem 0 !important; 
+      background-attachment: scroll;
+      background-image: url('https://raw.githubusercontent.com/Abitha-01/My-Portofolio/main/mobilebg.png');
+    }
+
+   
+      
+      .aboutme .aboutcontent {
+        padding: 0 !important; /* removes internal padding */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem; /* controls spacing between elements */
+      }
+      
+      .aboutme .aboutcontent h2 {
+        font-size: 2rem;
+        line-height: 2.5rem;
+        margin: 0; /* remove extra margin */
+        text-align: center;
+      }
+  
+    .skills-container {
+      gap: 20px;
+      padding: 40px 10px;
+    }
+  
+    .projects .projects-row {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .projects .projects-row .box {
+      width: 90%;
+    }
+  
+    .contact-box {
+      flex-direction: column;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    html {
+      font-size: 55%;
+    }
+    .aboutme{
+        background-attachment: scroll;
+      background-image: url('https://raw.githubusercontent.com/Abitha-01/My-Portofolio/main/mobilebg.png');
+    }
+    .aboutme .aboutcontent{
+        padding: 2rem;
+    }
+
+    .aboutme {
+        padding: 1.5rem 0 !important; /* reduce vertical spacing */
+      }
+    
+      .aboutme .aboutcontent {
+        padding: 0 !important;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.8rem; /* smaller spacing between items */
+      }
+  
+    .aboutme .aboutcontent h2 {
+     
+      font-size: 2.5rem;
+    line-height: 3.2rem;
+    }
+  
+    .aboutme .aboutcontent p {
+      font-size: 1.5rem;
+    }
+  }
