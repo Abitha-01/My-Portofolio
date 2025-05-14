@@ -455,7 +455,7 @@ html::-webkit-scrollbar-thumb{
     }
 
     .aboutme {
-        padding: 1.5rem 0 !important; /* reduce vertical spacing */
+        padding: 28.5rem 0 !important; /* reduce vertical spacing */
       }
     
       .aboutme .aboutcontent {
